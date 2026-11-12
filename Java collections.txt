@@ -1,0 +1,90 @@
+﻿import java.util.Scanner;
+import java.util.ArrayList;
+
+
+public class Main {
+   public static void main (String[] args) {
+       //the reader element in array been used
+       Scanner scanner =new Scanner(System.in);
+       // using arrraylist: we don't specify size of array
+       ArrayList<Integer> Mylist = new ArrayList<>();
+
+
+       //adding element to an array
+       /*Mylist.add(100);
+       Mylist.add(13);
+       Mylist.add(20000);
+       Mylist.add(60000);
+       Mylist.add(1083);
+       Mylist.add(80);
+       Mylist.add(100000000);
+
+
+
+
+       System.out.println(Mylist);
+
+
+       //Removing an element from an array
+       Mylist.remove(0);
+
+
+       System.out.println("After the removal:" );
+       System.out.println("Mylist" );
+
+
+       //Removing the last element in an array
+       Mylist.remove(Mylist.size()-1);
+
+
+       System.out.println("the removal of the last element in an array" );
+       System.out.println(Mylist);
+       */
+
+
+       //Arraylist for the friends
+       ArrayList<String> Friends =new ArrayList<>();
+       String name;
+       /*int i=0;
+       for ( i=0; i<=6; i++ ) {
+           System.out.print("Enter the name of your friend" +" " + (i+1)+": ");
+           name = scanner.nextLine();
+
+
+           if (name.length() <=4 )  {
+               Friends.add(name);
+           }
+           else{
+               System.out.println("Enter names with 4 letters only ");
+               i=i-1;
+           }
+
+
+
+
+       }
+
+
+       System.out.println(Friends);
+       // Removing a friend from the list
+       Friends.remove(3);
+       System.out.println();
+       */
+       // leets code practise
+
+
+       // displaying numbers in x1,y1,x2,y2,xn,yn\
+
+
+       int nums [] ={1,2,3};
+       int n= 3;
+       int ans [] = new int [2*n];
+
+
+       for (int i = 0; i < 3; i++) {
+           ans[2 * i] = nums[i];           // the x
+           ans[2 * i + 1] = nums[i + 3];   // its y partner
+       }
+       System.out.println(ans);
+       }
+   }
